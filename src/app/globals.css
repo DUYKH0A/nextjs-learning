@@ -14,13 +14,36 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --font-dm-serif: "DM Serif Display", serif;
+    --background: #ffffff;
+    --foreground: #171717;
   }
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/fonts/DM/DMSerifDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFPro/SF-Pro-Display-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url("/fonts/SFPro/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
