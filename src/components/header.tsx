@@ -18,25 +18,25 @@ export default function Header() {
         {/* Navbar */}
         <nav className="hidden lg:flex items-center lg:gap-6 xl:gap-10">
           <Link
-            className="text-[24px] border-b-4 border-black font-['DM_Serif_Display']"
+            className="text-[24px] border-b-4 border-black font-['DM_Serif_Display'] font-semibold"
             href="/"
           >
             Home
           </Link>
-          <Link className="text-[20px]" href="about_us">
+          <Link className="text-[20px] font-['SF_Pro_Display']" href="about-us">
             About Us
           </Link>
-          <Link className="text-[20px]" href="pricing">
+          <Link className="text-[20px] font-['SF_Pro_Display']" href="pricing">
             Pricing
           </Link>
-          <Link className="text-[20px]" href="contact">
+          <Link className="text-[20px] font-['SF_Pro_Display']" href="contact">
             Contact
           </Link>
         </nav>
         {/* Desktop Menu Button */}
         <div className="hidden lg:flex items-center gap-4">
           <div className="relative group">
-            <button className="flex items-center place-content-center h-11 w-[95px] bg-white rounded-lg px-4 py-2 gap-1 text-[16px]">
+            <button className="flex items-center place-content-center h-11 w-[95px] font-['SF_Pro_Display'] bg-white rounded-lg px-4 py-2 gap-1 text-[16px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={14}
@@ -59,7 +59,7 @@ export default function Header() {
                 <path d="M1 1L5 5L9 1" stroke="black" strokeWidth="1.5" />
               </svg>
             </button>
-            <div className="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-white shadow-md rounded-xl w-[120px]">
+            <div className="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col bg-white shadow-md rounded-xl w-[120px]">
               <button className="flex w-full px-4 py-2 text-[14px] hover:bg-gray-100 rounded-t-2xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function Header() {
             </div>
           </div>
           <a
-            className="flex items-center justify-center gap-1 text-[16px] w-[122px] h-11 bg-white text-black rounded-lg px-4 py-2"
+            className="flex items-center justify-center gap-1 text-[16px] w-[122px] h-11 font-['SF_Pro_Display'] bg-white text-black rounded-lg px-4 py-2"
             href=""
           >
             <svg
@@ -136,7 +136,7 @@ export default function Header() {
             Sign In
           </a>
           <a
-            className="flex items-center justify-center gap-1 text-[16px] w-[151px] h-11 bg-black text-white rounded-lg px-4 py-2"
+            className="flex items-center justify-center gap-1 text-[16px] w-[151px] h-11 font-['SF_Pro_Display'] bg-black text-white rounded-lg px-4 py-2"
             href=""
           >
             <svg
