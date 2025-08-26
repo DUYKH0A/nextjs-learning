@@ -4,7 +4,7 @@ export default function PricingPage() {
   return (
     <main className="flex-1 w-full bg-white">
       {/* Pricing Header Section */}
-      <section className="relative h-[472px] w-full">
+      <section className="relative h-[690px] md:h-[472px] w-full">
         {/* Image background */}
         <div className="absolute inset-0">
           <Image
@@ -12,6 +12,7 @@ export default function PricingPage() {
             alt="Background Image"
             layout="fill"
             objectFit="cover"
+            className=""
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/60 to-black/0" />
@@ -31,7 +32,7 @@ export default function PricingPage() {
       {/* Pricing Tiers */}
       <section className="md:pb-20 px-5 py-6 md:py-0 md:bg-[#FAFAFA]">
         {/* Menu Icon */}
-        <div className="flex items-center justify-center gap-4 mb-16 pt-20">
+        <div className="flex items-center justify-center gap-4 mb-16 md:mt-20">
           <span className="font-['SF_Pro_Display_Bold'] font-semibold text-[18px] text-black">
             Monthly
           </span>
@@ -592,10 +593,10 @@ export default function PricingPage() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -613,7 +614,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -643,7 +644,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -661,7 +662,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -679,7 +680,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -706,7 +707,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -724,7 +725,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -786,7 +787,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -804,7 +805,7 @@ export default function PricingPage() {
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
+                        className="lucide lucide-x w-4 h-4 text-gray-400 mx-auto"
                         aria-hidden="true"
                       >
                         <path d="M18 6 6 18"></path>
@@ -873,7 +874,7 @@ export default function PricingPage() {
                         fill="currentColor"
                         stroke-width="0"
                         viewBox="0 0 24 24"
-                        class="w-6 h-6"
+                        className="w-6 h-6"
                         height="1em"
                         width="1em"
                         xmlns="http://www.w3.org/2000/svg"
@@ -896,9 +897,9 @@ export default function PricingPage() {
                       <svg
                         stroke="currentColor"
                         fill="currentColor"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
-                        class="w-6 h-6"
+                        className="w-6 h-6"
                         height="1em"
                         width="1em"
                         xmlns="http://www.w3.org/2000/svg"
@@ -920,16 +921,19 @@ export default function PricingPage() {
                 {/* input mail */}
                 <div className="flex items-center justify-between gap-4 mt-8">
                   <input
-                    type="text"
-                    className="border border-gray-200 px-4 py-3 w-full h-[50px] rounded-lg"
+                    type="email"
+                    className="border border-gray-200 px-4 py-3 w-full h-[50px] rounded-lg focus:outline-none focus:ring-2 focus:ring-black/20"
                     placeholder="Enter your email"
+                    autoComplete="email"
+                    aria-invalid="false"
+                    aria-describedby="email-error"
                   />
                   <button className="bg-black text-white px-6 py-3 font-['SF_Pro_Display'] rounded-lg whitespace-nowrap">
                     Notify Me
                   </button>
                 </div>
               </div>
-              <div className="hidden lg:block relative w-[574px] h-[574px]">
+              <div className="hidden lg:block relative w-[576px] h-[700px]">
                 <Image
                   src="/pricing/advanced-features.jpg"
                   alt="Advanced Features"
@@ -939,6 +943,200 @@ export default function PricingPage() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Frequently Asked Questions */}
+      <section className="px-5 md:px-20 py-6 sm:block  text-center hidden font-[SF_Pro_Display]">
+        {/* title */}
+        <h2 className="text-3xl px-5 mb-6 mt-[70px] font-['DM_Serif_Display']">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-xl text-gray-500 px-5 mb-6">
+          Find answers to common questions about our pricing plans and billing
+        </p>
+        {/* grid */}
+        <div className="grid md:grid-cols-2 gap-8 mx-0 lg:mx-8 px-0 lg:px-40">
+          {/* grid 1 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              How does billing work?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              We offer both monthly and annual billing options. Annual plans
+              come with a 20% discount. You can change your billing cycle at any
+              time from your account settings.
+            </p>
+          </div>
+          {/* grid 2 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              Can I upgrade or downgrade my plan?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              Yes, you can upgrade or downgrade your plan at any time. When
+              upgrading, you&apos;ll be charged the prorated difference. When
+              downgrading, the new rate will apply at the start of your next
+              billing cycle.
+            </p>
+          </div>
+          {/* grid 3 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              Is there a free trial?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              We offer a free Discovery plan with limited features that you can
+              use indefinitely. For paid plans, we offer a 14-day money-back
+              guarantee if you&apos;re not satisfied with our service.
+            </p>
+          </div>
+          {/* grid 4 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              What payment methods do you accept?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              We accept all major credit cards (Visa, Mastercard, American
+              Express), PayPal, and for annual plans, we also accept bank
+              transfers and wire transfers.
+            </p>
+          </div>
+          {/* grid 5 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              Do you offer discounts for educational institutions?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              Yes, we offer special pricing for educational institutions and
+              students. Please contact our sales team with your academic
+              credentials for more information.
+            </p>
+          </div>
+          {/* grid 6 */}
+          <div className="bg-white p-[33px] rounded-[20px] md:text-start tracking-wide border border-[#FFFFFF4D] shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]">
+            <h3 className="text-gray-900 font-semibold text-xl px-5 md:px-0 pb-0 md:pb-4 font-[SF_Pro_Display_Bold]">
+              What happens if I exceed my monthly design limit?
+            </h3>
+            <p className="text-gray-600 md:leading-relaxed tracking-wider pr-3">
+              If you reach your monthly design limit on the Creator plan,
+              you&apos;ll need to wait until your next billing cycle or upgrade
+              to a higher plan. Professional and Studio plans offer unlimited
+              designs.
+            </p>
+          </div>
+        </div>
+        {/* button */}
+        <div className="mt-14">
+          <p className="text-gray-600 mb-4 font-[SF_Pro_Display]">
+            Still have questions?
+          </p>
+          <a href="/contact">
+            <button className="bg-black text-white rounded-lg px-12 py-4 font-[SF_Pro_Display] hover:bg-gray-800 transition-colors duration-200 cursor-pointer">
+              Contact Support
+            </button>
+          </a>
+        </div>
+      </section>
+      {/* Ready to Transform Your Fashion Designs? */}
+      <section className="bg-black text-white px-4 py-5 md:py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-['DM_Serif_Display'] pb-6">
+            Ready to Transform Your Fashion Designs?
+          </h2>
+          <p className="text-xl font-['SF_Pro_Display'] mb-8">
+            Join thousands of designers already using PATRONIK to bring their
+            fashion ideas to life{" "}
+          </p>
+        </div>
+        {/* button  */}
+        <div className="flex items-center justify-center gap-4 pb-12">
+          <a
+            className="flex items-center justify-center w-[256px] h-[58px] px-[32px] py-[16px] font-medium 
+            bg-white text-black rounded-lg duration-300 hover:bg-gray-100 border border-gray-300"
+            href=""
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-arrow-right w-4 h-4 mr-1"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+            Get Started Now
+          </a>
+          <a
+            className="flex items-center justify-center w-[256px] h-[58px] px-[32px] py-[16px] bg-black text-white font-medium rounded-lg duration-300 hover:bg-gray-900 border border-gray-600"
+            href=""
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-circle-play w-4 h-4 mr-1"
+              aria-hidden="true"
+            >
+              <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path>
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+            <span>Watch Demo</span>
+          </a>
+        </div>
+        {/* Benefits */}
+        <div className="flex flex-col md:flex-row gap-2 md:gap-8 items-center justify-center font-['SF_Pro_Display']">
+          <div className="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-shield-check inline-block"
+              aria-hidden="true"
+            >
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+            <span>14-day money-back guarantee</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/pricing/icons/Icon-649.svg"
+              alt="Secure payment"
+              width={16}
+              height={16}
+              className="inline-block"
+            />
+            <span>24/7 customer support</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/pricing/icons/Icon-656.svg"
+              alt="Secure payment"
+              width={16}
+              height={16}
+              className="inline-block"
+            />
+            <span>Secure payment</span>
           </div>
         </div>
       </section>
