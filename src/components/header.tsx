@@ -1,7 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
+const linkClass = (path: string) =>
+  pathname === path
+    ? "text-[24px] font-['DM_Serif_Display'] border-b-4 border-black font-semibold"
+    : "text-[20px] font-['SF_Pro_Display']";
   return (
     <header className="fixed max-h-[55px] lg:max-h-24 top-0 left-0 right-0 z-[9999] bg-white/20 backdrop-blur-[2px] shadow-sm">
       <div className="flex max-h-[55px] gap-6 lg:max-h-24 px-4 lg:px-10 xl:px-20 h-16 lg:h-24 items-center justify-between bg-white/20">
@@ -17,22 +25,22 @@ export default function Header() {
         </Link>
         {/* Navbar */}
         <nav className="hidden lg:flex items-center lg:gap-6 xl:gap-10">
-          <Link
-            className="text-[24px] border-b-4 border-black font-['DM_Serif_Display'] font-semibold"
-            href="/"
-          >
-            Home
-          </Link>
-          <Link className="text-[20px] font-['SF_Pro_Display']" href="about-us">
-            About Us
-          </Link>
-          <Link className="text-[20px] font-['SF_Pro_Display']" href="pricing">
-            Pricing
-          </Link>
-          <Link className="text-[20px] font-['SF_Pro_Display']" href="contact">
-            Contact
-          </Link>
-        </nav>
+      <Link
+        className={linkClass("/")}
+        href="/"
+      >
+        Home
+      </Link>
+      <Link className={linkClass("/about-us")} href="/about-us">
+        About Us
+      </Link>
+      <Link className={linkClass("/pricing")} href="/pricing">
+        Pricing
+      </Link>
+      <Link className={linkClass("/contact")} href="/contact">
+        Contact
+      </Link>
+    </nav>
         {/* Desktop Menu Button */}
         <div className="hidden lg:flex items-center gap-4">
           <div className="relative group">
@@ -59,7 +67,7 @@ export default function Header() {
                 <path d="M1 1L5 5L9 1" stroke="black" strokeWidth="1.5" />
               </svg>
             </button>
-            <div className="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col bg-white shadow-md rounded-xl w-[120px]">
+            <div className="absolute top-full left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white shadow-md rounded-2xl w-[120px]">
               <button className="flex w-full px-4 py-2 text-[14px] hover:bg-gray-100 rounded-t-2xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

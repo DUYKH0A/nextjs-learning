@@ -1,0 +1,78 @@
+{
+  "home": {
+    "hero": {
+      "title": "Transformez vos idées de mode en réalité",
+      "subtitle": "Créez des modèles et des patrons professionnels grâce à la technologie IA. Parfait pour les créateurs, stylistes et passionnés de mode.",
+      "cta": {
+        "start": "Commencer à créer",
+        "watchDemo": "Regarder la démo"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "subtitle": "Créez des modèles de mode personnalisés en trois étapes simples",
+      "steps": {
+        "step1": {
+          "title": "1. Décrivez votre design",
+          "description": "Décrivez simplement votre idée de vêtement en langage naturel. Notre IA comprend la terminologie et les références de style."
+        },
+        "step2": {
+          "title": "2. Générez un rendu visuel",
+          "description": "Obtenez immédiatement des rendus de mode haute qualité. Notre IA crée des visualisations réalistes de votre design."
+        },
+        "step3": {
+          "title": "3. Téléchargez les patrons",
+          "description": "Recevez des patrons de couture de qualité professionnelle en PDF, SVG ou DXF, prêts pour la production."
+        }
+      }
+    },
+    "plans": {
+      "title": "Nos Tarifs",
+      "subtitle": "Choisissez le plan qui correspond le mieux à vos besoins",
+      "creator": {
+        "name": "Créateur",
+        "price": "12,90 €",
+        "unit": "/mois",
+        "features": [
+          "10 designs par mois",
+          "Visuels HD",
+          "Export PDF/SVG"
+        ],
+        "cta": "Commencer"
+      },
+      "pro": {
+        "name": "Pro",
+        "label": "Populaire",
+        "price": "29,90 €",
+        "unit": "/mois",
+        "features": [
+          "Designs illimités",
+          "Variations futures",
+          "Cloud, favoris"
+        ],
+        "cta": "Commencer"
+      },
+      "studio": {
+        "name": "Studio",
+        "price": "59 €",
+        "unit": "/mois",
+        "features": [
+          "Designs illimités",
+          "3D, multi-tailles",
+          "Support prioritaire"
+        ],
+        "cta": "Commencer"
+      }
+    },
+    "trusted": {
+      "title": "Fiable pour les professionnels de la mode",
+      "subtitle": "Rejoignez des milliers de créateurs et de marques qui font confiance à PATRONIK",
+      "brands": [
+         "google",
+         "apple",
+         "amazon",
+         "windows"
+      ]
+    }
+  }
+}
