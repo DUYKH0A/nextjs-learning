@@ -1,6 +1,20 @@
+"use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const tHero = useTranslations("home.hero");
+  const tHowItWorks = useTranslations("home.howItWorks");
+  const tPlans = useTranslations("home.plans");
+  const tTrusted = useTranslations("home.trusted");
+
+  const tPlansCreatorFeatures = tPlans.raw("creator.features") as string[];
+  const tPlansProFeatures = tPlans.raw("pro.features") as string[];
+  const tPlansStudioFeatures = tPlans.raw("studio.features") as string[];
+
+  const tTrustedBrands = tTrusted.raw("brands") as string[];
+
+
   return (
     <main className="flex-1 w-full bg-white">
       {/* Transform Your Fashion */}
@@ -17,12 +31,10 @@ export default function Home() {
           <div className="flex flex-col max-w-[1216px] px-[32px]">
             <div className="flex flex-col max-w-[672px]">
               <h1 className="flex mb-[24px] text-3xl lg:text-6xl leading-[150%] font-['DM_Serif_Display']">
-                Transform Your Fashion Ideas Into Reality
+                {tHero("title")}
               </h1>
               <p className="flex text-xl mb-8 tracking-wide font-['SF_Pro_Display']">
-                Create professional garment designs and patterns with AI-powered
-                technology. Perfect for designers, stylists, and fashion
-                enthusiasts.
+                {tHero("subtitle")}
               </p>
               <div className="flex flex-col lg:flex-row gap-4">
                 <button className="cursor-pointer flex items-center justify-center w-[256px] h-14 px-[32px] py-[16px] gap-2 bg-black text-white font-['SF_Pro_Display'] duration-300 hover:scale-110 rounded-lg">
@@ -33,7 +45,7 @@ export default function Home() {
                     width={16}
                     height={16}
                   />
-                  <span>Start Creating</span>
+                  <span>{tHero("cta.start")}</span>
                 </button>
                 <a
                   className="flex items-center justify-center w-[256px] h-14 px-[32px] py-[16px] gap-2 bg-white text-black font-['SF_Pro_Display'] rounded-lg duration-300 hover:scale-110 border border-gray-300"
@@ -46,7 +58,7 @@ export default function Home() {
                     width={16}
                     height={16}
                   />
-                  <span>Watch Demo</span>
+                  <span>{tHero("cta.watchDemo")}</span>
                 </a>
               </div>
             </div>
@@ -56,10 +68,10 @@ export default function Home() {
       {/* How It Works */}
       <section className="py-16 lg:py-32 px-6 lg:px-20">
         <h2 className="text-center mb-6 font-['DM_Serif_Display'] text-3xl lg:text-6xl">
-          How It Works
+          {tHowItWorks("title")}
         </h2>
         <p className="text-center mb-24 font-['SF_Pro_Display'] text-xl text-[#4b5563]">
-          Create custom fashion designs in three simple steps
+          {tHowItWorks("subtitle")}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:px-8 gap-12">
           <div className="w-full flex flex-col items-center lg:items-start p-[49px] bg-white shadow-[0px_8px_32px_0px_rgba(31,38,135,0.07)] backdrop-blur-[5px] rounded-[20px] border border-gray-200">
@@ -78,11 +90,10 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="mb-4 font-['DM_Serif_Display'] text-xl">
-              1. Describe Your Design
+              {tHowItWorks("steps.step1.title")}{" "}
             </h3>
             <p className="text-base text-center lg:text-left font-['SF_Pro_Display'] text-gray-600">
-              Simply describe your garment idea in natural language. Our AI
-              understands fashion terminology and style references.
+              {tHowItWorks("steps.step1.description")}
             </p>
           </div>
           <div className="w-full flex flex-col items-center lg:items-start p-[49px] bg-white shadow-[0px_8px_32px_0px_rgba(31,38,135,0.07)] backdrop-blur-[5px] rounded-[20px] border border-gray-200">
@@ -95,11 +106,10 @@ export default function Home() {
               />
             </div>
             <h3 className="mb-4 font-['DM_Serif_Display'] text-xl">
-              2. Generate Visual Design
+              {tHowItWorks("steps.step2.title")}
             </h3>
             <p className="text-base text-center lg:text-left font-['SF_Pro_Display'] text-gray-600">
-              Get high-quality fashion renders instantly. Our AI creates
-              realistic visualizations of your described design.
+              {tHowItWorks("steps.step2.description")}
             </p>
           </div>
           <div className="w-full flex flex-col items-center lg:items-start p-[49px] bg-white shadow-[0px_8px_32px_0px_rgba(31,38,135,0.07)] backdrop-blur-[5px] rounded-[20px] border border-gray-200">
@@ -112,11 +122,10 @@ export default function Home() {
               />
             </div>
             <h3 className="mb-4 font-['DM_Serif_Display'] text-xl">
-              3. Download Patterns
+              {tHowItWorks("steps.step3.title")}{" "}
             </h3>
             <p className="text-base text-center lg:text-left font-['SF_Pro_Display'] text-gray-600">
-              Get professional-grade sewing patterns in PDF, SVG, or DXF format,
-              ready for production.
+              {tHowItWorks("steps.step3.description")}
             </p>
           </div>
         </div>
@@ -124,96 +133,93 @@ export default function Home() {
       {/* Pricing Plans */}
       <section className="py-16 lg:py-32 px-6 lg:px-20">
         <h2 className="flex items-center justify-center mb-4 font-['DM_Serif_Display'] text-6xl">
-          Pricing Plans
+          {tPlans("title")}
         </h2>
         <p className="flex items-center justify-center pb-24 mb-6 font-['SF_Pro_Display'] text-gray-600 text-xl">
-          Choose the plan that best fits your needs
+          {tPlans("subtitle")}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-12 lg:px-8 gap-12">
           <div className="group w-full p-[49px] bg-white shadow-xl backdrop-blur-[5px] rounded-2xl border border-gray-200 hover:shadow-[0_0_15px_rgba(107,114,128,0.3)] hover:bg-[#F6F6F6] hover:scale-105 transition-all duration-300">
-            <h3 className="text-xl font-['DM_Serif_Display']">Creator</h3>
+            <h3 className="text-xl font-['DM_Serif_Display']">
+              {tPlans("creator.name")}
+            </h3>
             <p className="text-4xl flex items-center mb-6 font-['DM_Serif_Display']">
-              $12.90
+              {tPlans("creator.price")}
               <span className="text-lg text-gray-500 ml-1 font-['DM_Serif_Display']">
-                /month
+                {tPlans("creator.unit")}
               </span>
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                10 designs per month
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                HD Visuals
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                PDF/SVG export
-              </li>
+              {tPlansCreatorFeatures.map((feature, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2 text-base text-black"
+                >
+                  <img src="/home/icons/Icon-88.svg" alt="" />
+                  {feature}
+                </li>
+              ))}
             </ul>
             <a href="">
               <button className="w-full py-3 rounded-[8px] border border-gray-200 bg-white group-hover:bg-black group-hover:text-white group-hover:shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-all duration-300">
-                Get Started
+                {tPlans("creator.cta")}
               </button>
             </a>
           </div>
           <div className="group w-full p-[49px] bg-white shadow-xl backdrop-blur-[5px] rounded-2xl border border-gray-200 hover:shadow-[0_0_15px_rgba(107,114,128,0.3)] hover:bg-[#F6F6F6] hover:scale-105 transition-all duration-300">
             <div className="absolute -top-[11px] left-1/2 -translate-x-1/2 bg-black text-white text-sm px-4 py-1 rounded-full">
-              Popular
+              {tPlans("pro.label")}
             </div>
-            <h3 className="text-xl font-['DM_Serif_Display']">Pro</h3>
+            <h3 className="text-xl font-['DM_Serif_Display']">
+              {tPlans("pro.name")}
+            </h3>
             <p className="text-4xl flex items-center mb-6 font-['DM_Serif_Display']">
-              $29.90
+              {tPlans("pro.price")}
               <span className="text-lg text-gray-500 ml-1 font-['DM_Serif_Display']">
-                /month
+                {tPlans("pro.unit")}
               </span>
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                Unlimited designs
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                Future variations
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                Cloud, favorites
-              </li>
+              {tPlansProFeatures.map((feature, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2 text-base text-black"
+                >
+                  <img src="/home/icons/Icon-88.svg" alt="" />
+                  {feature}
+                </li>
+              ))}
             </ul>
             <a href="">
               <button className="w-full py-3 rounded-[8px] border border-gray-200 bg-white group-hover:bg-black group-hover:text-white group-hover:shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-all duration-300">
-                Get Started
+                {tPlans("pro.cta")}
               </button>
             </a>
           </div>
           <div className="group w-full p-[49px] bg-white shadow-xl backdrop-blur-[5px] rounded-2xl border border-gray-200 hover:shadow-[0_0_15px_rgba(107,114,128,0.3)] hover:bg-[#F6F6F6] hover:scale-105 transition-all duration-300">
-            <h3 className="text-xl font-['DM_Serif_Display']">Studio</h3>
+            <h3 className="text-xl font-['DM_Serif_Display']">
+              {tPlans("studio.name")}
+            </h3>
             <p className="text-4xl flex items-center mb-6 font-['DM_Serif_Display']">
-              $59
+              {tPlans("studio.price")}
               <span className="text-lg text-gray-500 ml-1 font-['DM_Serif_Display']">
-                /month
+                {tPlans("studio.unit")}
               </span>
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                Unlimited designs
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                3D, Multi-sizes
-              </li>
-              <li className="flex items-center gap-2 text-base text-black">
-                <img src="/home/icons/Icon-88.svg" alt="" />
-                Priority support
-              </li>
+              {tPlansStudioFeatures.map((feature, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2 text-base text-black"
+                >
+                  <img src="/home/icons/Icon-88.svg" alt="" />
+                  {feature}
+                </li>
+              ))}
             </ul>
             <a href="">
               <button className="w-full py-3 rounded-[8px] border border-gray-200 bg-white group-hover:bg-black group-hover:text-white group-hover:shadow-[0_0_12px_rgba(0,0,0,0.2)] transition-all duration-300">
-                Get Started
+                {tPlans("studio.cta")}
               </button>
             </a>
           </div>
@@ -223,13 +229,25 @@ export default function Home() {
       <section className="py-[25px] lg:py-32 px-6 lg:px-20 bg-[#FAFAFA] text-center">
         <div className="max-w-[1280px] mx-auto flex flex-col items-center gap-6">
           <h2 className="text-3xl lg:text-6xl font-['DM_Serif_Display'] text-black">
-            Trusted by Fashion Professionals
+            {tTrusted("title")}
           </h2>
           <p className="text-xl text-gray-600 max-w-[700px] font-['SF_Pro_Display']">
-            Join thousands of fashion designers and brands who trust PATRONIK
+            {tTrusted("subtitle")}{" "}
           </p>
           <div className="flex flex-wrap px-8 justify-center items-center gap-6 lg:gap-12 mt-6">
-            <div className="flex justify-center items-center px-[6.5px] py-[3px] lg:px-[115.33px] lg:py-1.5">
+            {tTrustedBrands.map((brand, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center px-[6.5px] py-[3px] lg:px-[115.33px] lg:py-1.5"
+              >
+                <img
+                  src={`https://frontend-rho-nine-42.vercel.app/logos/${brand}.svg`}
+                  alt="google"
+                  className="w-6 h-6 object-contain"
+                />
+              </div>
+            ))}
+            {/* <div className="flex justify-center items-center px-[6.5px] py-[3px] lg:px-[115.33px] lg:py-1.5">
               <img
                 src="https://frontend-rho-nine-42.vercel.app/logos/google.svg"
                 alt="google"
@@ -256,7 +274,7 @@ export default function Home() {
                 alt="windows"
                 className="w-6 h-6 object-contain"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -1,0 +1,78 @@
+  {
+    "home": {
+      "hero": {
+        "title": "Transform Your Fashion Ideas Into Reality",
+        "subtitle": "Create professional garment designs and patterns with AI-powered technology. Perfect for designers, stylists, and fashion enthusiasts.",
+        "cta": {
+          "start": "Start Creating",
+          "watchDemo": "Watch Demo"
+        }
+      },
+      "howItWorks": {
+        "title": "How It Works",
+        "subtitle": "Create custom fashion designs in three simple steps",
+        "steps": {
+          "step1": {
+            "title": "1. Describe Your Design",
+            "description": "Simply describe your garment idea in natural language. Our AI understands fashion terminology and style references."
+          },
+          "step2": {
+            "title": "2. Generate Visual Design",
+            "description": "Get high-quality fashion renders instantly. Our AI creates realistic visualizations of your described design."
+          },
+          "step3": {
+            "title": "3. Download Patterns",
+            "description": "Get professional-grade sewing patterns in PDF, SVG, or DXF format, ready for production."
+          }
+        }
+      },
+      "plans": {
+        "title": "Pricing Plans",
+        "subtitle": "Choose the plan that best fits your needs",
+        "creator": {
+          "name": "Creator",
+          "price": "$12.90",
+          "unit": "/month",
+          "features": [
+            "10 designs per month",
+            "HD Visuals",
+            "PDF/SVG export"
+          ],
+          "cta": "Get Started"
+        },
+        "pro": {
+          "name": "Pro",
+          "label": "Popular",
+          "price": "$29.90",
+          "unit": "/month",
+          "features": [
+            "Unlimited designs",
+            "Future variations",
+            "Cloud, favorites"
+          ],
+          "cta": "Get Started"
+        },
+        "studio": {
+          "name": "Studio",
+          "price": "$59",
+          "unit": "/month",
+          "features": [
+            "Unlimited designs",
+            "3D, Multi-sizes",
+            "Priority support"
+          ],
+          "cta": "Get Started"
+        }
+      },
+      "trusted": {
+        "title": "Trusted by Fashion Professionals",
+        "subtitle": "Join thousands of fashion designers and brands who trust PATRONIK",
+        "brands": [
+          "google",
+          "apple",
+          "amazon",
+          "windows"
+        ]
+      }
+    }
+  }
