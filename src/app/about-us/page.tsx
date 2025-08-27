@@ -19,10 +19,10 @@ export default function AboutUsPage() {
           <div className="hidden md:grid md:grid-cols-2 ">
             <div className="flex items-end justify-start h-full">
               <div className="text-left max-w-[690px]">
-                <h1 className="text-6xl font-medium font-['DM_Serif_Display'] leading-normal  ">
+                <h1 className="text-6xl font-medium font-['DM_Serif_Display']" style={{ lineHeight: "normal" }}>
                   About PATRONIK
                 </h1>
-                <p className="text-[#4B5563] text-[20px] sm:text-base md:text-lg lg:text-xl font-extralight text-center md:text-left lg:text-left align-middle">
+                <p className="text-[#4B5563] text-[20px] leading-[150%] sm:text-base md:text-lg lg:text-xl font-extralight text-center md:text-left lg:text-left align-middle" >
                   We&apos;re revolutionizing fashion design with AI-powered
                   technology,
                   <br />
@@ -46,13 +46,13 @@ export default function AboutUsPage() {
                 Our Mission
               </h2>
               <div className="space-y-4 sm:space-y-6 text-center">
-                <p className="px-3 lg:px-0 text-sm sm:text-base md:text-lg mb-6 text-center lg:text-left lg:text-xl text-[#4B5563] lg:line-clamp-3">
+                <p className="px-3 lg:px-0 text-sm sm:text-base md:text-lg mb-6 text-center lg:text-left lg:text-xl text-[#4B5563] lg:line-clamp-3 leading-none font-['SF_Pro_Display']">
                   At PATRONIK, we believe that every creative mind deserves
                   access to professional-grade design tools. Our mission is to
                   democratize fashion design by making it accessible, intuitive,
                   and powerful for everyone.
                 </p>
-                <p className="px-4 lg:px-0 text-sm sm:text-base md:text-lg mb-6 text-center lg:text-left lg:text-xl text-[#4B5563] lg:line-clamp-3">
+                <p className="px-4 lg:px-0 text-sm sm:text-base md:text-lg mb-6 text-center lg:text-left lg:text-xl text-[#4B5563] lg:line-clamp-3 leading-none font-['SF_Pro_Display']">
                   We combine cutting-edge artificial intelligence with deep
                   fashion industry expertise to create tools that understand
                   your creative vision and help bring it to life with
@@ -61,7 +61,7 @@ export default function AboutUsPage() {
               </div>
               <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight font-['DM_Serif_Display']">
                     50K+
                   </div>
                   <div className="text-[#4B5563] font-normal text-xs sm:text-sm md:text-base leading-tight tracking-normal">
@@ -69,7 +69,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight font-['DM_Serif_Display']">
                     15K+
                   </div>
                   <div className="text-[#4B5563] font-normal text-xs sm:text-sm md:text-base leading-tight tracking-normal">
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight font-['DM_Serif_Display']">
                     98%
                   </div>
                   <div className="text-[#4B5563] font-normal text-xs sm:text-sm md:text-base leading-tight tracking-normal">
@@ -85,7 +85,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl text-[#1A1A1A] mb-1 sm:mb-2 font-normal leading-tight font-['DM_Serif_Display']">
                     24/7
                   </div>
                   <div className="text-[#4B5563] font-normal text-xs sm:text-sm md:text-base leading-tight tracking-normal">
@@ -116,10 +116,10 @@ export default function AboutUsPage() {
       <section className="py-5 md:py-24 lg:py-32 bg-white">
         <div className="container mx-auto px-0 sm:px-6 lg:px-8">
           <div className="text-center mb-4 lg:mb-16 md:mb-20">
-            <h2 className="text-[#1A1A1A] text-4xl md:text-5xl lg:text-6xl text-center font-dm-serif font-normal font-serif leading-tight md:leading-[60px]">
+            <h2 className="text-[#1A1A1A] text-4xl md:text-5xl lg:text-6xl text-center font-['DM_Serif_Display'] font-normal leading-tight md:leading-[60px]">
               Our Story
             </h2>
-            <p className="text-xl text-[#4B5563] font-normal leading-relaxed text-center mt-4 max-w-3xl mx-auto align-middle">
+            <p className="text-xl text-[#4B5563] font-['SF_Pro_Display'] font-normal leading-relaxed text-center mt-4 max-w-3xl mx-auto align-middle">
               From a simple idea to revolutionizing fashion design
             </p>
           </div>
@@ -163,12 +163,12 @@ export default function AboutUsPage() {
                   </div>
                   <div className="w-4 h-4 -left-[5px] top-6 absolute bg-zinc-900 rounded-[50px]"></div>
                 </div>
-                <div className="lg:w-[392px]">
-                  <p className="text-sm text-[#6B7280] mb-2">2019</p>
-                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] mb-3">
+                <div className="lg:w-[392px] pr-5 tracking-wide">
+                  <p className="text-sm text-[#6B7280] mb-2 font-['SF_Pro_Display']">2019</p>
+                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] font-bold mb-3 font-['DM_Serif_Display']">
                     The Beginning
                   </h3>
-                  <p className="text-base text-[#4B5563] leading-relaxed">
+                  <p className="text-base text-[#4B5563] leading-relaxed font-['SF_Pro_Display']">
                     Founded by a team of fashion designers and AI researchers
                     who saw the potential to bridge the gap between creative
                     vision and technical execution in fashion design.
@@ -224,12 +224,12 @@ export default function AboutUsPage() {
                   </div>
                   <div className="w-4 h-4 -left-[5px] top-6 absolute bg-zinc-900 rounded-[50px]"></div>
                 </div>
-                <div className="lg:w-[392px] order-2">
-                  <p className="text-sm text-[#6B7280] mb-2">2021</p>
-                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] mb-3">
+                <div className="lg:w-[392px] pr-5 tracking-wide order-2">
+                  <p className="text-sm text-[#6B7280] mb-2 font-['SF_Pro_Display']">2021</p>
+                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] font-bold mb-3 font-['DM_Serif_Display']"> 
                     First Prototype
                   </h3>
-                  <p className="text-base text-[#4B5563] leading-relaxed">
+                  <p className="text-base text-[#4B5563] leading-relaxed font-['SF_Pro_Display']">
                     Launched our first AI-powered design tool, enabling users to
                     create basic garment patterns from text descriptions. The
                     response from the fashion community was overwhelmingly
@@ -287,12 +287,12 @@ export default function AboutUsPage() {
                   </div>
                   <div className="w-4 h-4 -left-[5px] top-6 absolute bg-zinc-900 rounded-[50px]"></div>
                 </div>
-                <div className="lg:w-[392px]">
-                  <p className="text-sm text-[#6B7280] mb-2">2023</p>
-                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] mb-3">
+                <div className="lg:w-[392px] pr-5 tracking-wide">
+                  <p className="text-sm text-[#6B7280] mb-2 font-['SF_Pro_Display']">2023</p>
+                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] font-bold mb-3 font-['DM_Serif_Display']">
                     Platform Launch
                   </h3>
-                  <p className="text-base text-[#4B5563] leading-relaxed">
+                  <p className="text-base text-[#4B5563] leading-relaxed font-['SF_Pro_Display']">
                     Officially launched PATRONIK as a comprehensive fashion
                     design platform, introducing advanced features like
                     realistic rendering, pattern generation, and collaborative
@@ -350,12 +350,12 @@ export default function AboutUsPage() {
                   </div>
                   <div className="w-4 h-4 -left-[5px] top-6 absolute bg-zinc-900 rounded-[50px]"></div>
                 </div>
-                <div className="lg:w-[392px] order-2">
-                  <p className="text-sm text-[#6B7280] mb-2">2025</p>
-                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] mb-3">
+                <div className="lg:w-[392px] pr-5 tracking-wide order-2">
+                  <p className="text-sm text-[#6B7280] mb-2 font-['SF_Pro_Display']">2025</p>
+                  <h3 className="text-2xl lg:text-3xl text-[#1A1A1A] font-bold mb-3 font-['DM_Serif_Display']">
                     Global Expansion
                   </h3>
-                  <p className="text-base text-[#4B5563] leading-relaxed">
+                  <p className="text-base text-[#4B5563] leading-relaxed font-['SF_Pro_Display']">
                     Today, PATRONIK serves thousands of designers worldwide,
                     from independent creators to major fashion houses, helping
                     them bring their creative visions to life faster than ever
@@ -407,13 +407,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 Sarah Chen
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 CEO & Co-Founder
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 Former fashion designer at Chanel with 15 years of industry
                 experience. Sarah leads our vision to democratize fashion design
                 through technology.
@@ -455,13 +455,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 Marcus Rodriguez
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 CTO & Co-Founder
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 AI researcher with PhD from MIT. Marcus oversees our machine
                 learning algorithms and ensures our technology stays at the
                 cutting edge.
@@ -503,13 +503,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 Lisa Wang
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 Head of Marketing
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 Marketing strategist with deep fashion industry connections.
                 Lisa helps us reach and serve the global fashion design
                 community effectively.
@@ -551,13 +551,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 David Kim
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 Head of Engineering
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 Full-stack engineer with expertise in scalable systems. David
                 ensures our platform can handle millions of designs while
                 maintaining peak performance.
@@ -599,13 +599,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 Emma Thompson
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 Head of Design
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 Award-winning UX designer who ensures our platform is intuitive
                 and delightful to use. Emma bridges the gap between technology
                 and user experience.
@@ -647,13 +647,13 @@ export default function AboutUsPage() {
                 </div>
               </div>
               {/* body */}
-              <h3 className="text-[#1A1A1A] text-xl text-center font-[520] mb-2">
+              <h3 className="text-xl text-zinc-900 font-[520] text-center mb-2 font-['SF_Pro_Display_Bold']">
                 James Miller
               </h3>
-              <p className="text-[#4B5563] text-base text-center mb-4">
+              <p className="text-[#4B5563] text-base text-center mb-4 font-['SF_Pro_Display']">
                 Head of Customer Success
               </p>
-              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4">
+              <p className="text-[#4B5563] text-sm text-center leading-relaxed h-[115px] mb-4 font-['SF_Pro_Display']">
                 Customer success expert who ensures every user gets the most out
                 of PATRONIK. James leads our support and education initiatives.
               </p>
@@ -697,7 +697,7 @@ export default function AboutUsPage() {
           {/* body */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* grid 1 */}
-            <div className="flex flex-col p-8 rounded-[20px] border border-white/30 bg-white/70 shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
+            <div className="flex flex-col p-8 rounded-[24px] shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
               <div className="relative w-16 h-16 mb-6">
                 <Image
                   src="https://frontend-rho-nine-42.vercel.app/icons/About-Us/Innovation.svg"
@@ -709,14 +709,14 @@ export default function AboutUsPage() {
               <h3 className="text-[#1A1A1A] text-3xl font-['DM_Serif_Display'] mb-4">
                 Innovation
               </h3>
-              <p className="text-[#4B5563] text-base leading-relaxed line-clamp-2">
+              <p className="text-[#4B5563] lg:text-left text-xl leading-relaxed font-light font-['SF_Pro_Display'] lg:line-clamp-2">
                 We constantly push the boundaries of what&apos;s possible in fashion
                 design technology, always seeking new ways to empower
                 creativity.
               </p>
             </div>
             {/* grid 2 */}
-            <div className="flex flex-col p-8 rounded-[20px] border border-white/30 bg-white/70 shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
+            <div className="flex flex-col p-8 rounded-[24px] shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
               <div className="relative w-16 h-16 mb-6">
                 <Image
                   src="https://frontend-rho-nine-42.vercel.app/icons/About-Us/Accessibility.svg"
@@ -728,13 +728,13 @@ export default function AboutUsPage() {
               <h3 className="text-[#1A1A1A] text-3xl font-['DM_Serif_Display'] mb-4">
                 Accessibility
               </h3>
-              <p className="text-[#4B5563] text-base leading-relaxed line-clamp-2">
+              <p className="text-[#4B5563] lg:text-left text-xl leading-relaxed font-light font-['SF_Pro_Display'] lg:line-clamp-2">
                 We believe great design tools should be accessible to everyone,
                 regardless of their technical background or experience level.
               </p>
             </div>
             {/* grid 3 */}
-            <div className="flex flex-col p-8 rounded-[20px] border border-white/30 bg-white/70 shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
+            <div className="flex flex-col p-8 rounded-[24px] shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
               <div className="relative w-16 h-16 mb-6">
                 <Image
                   src="https://frontend-rho-nine-42.vercel.app/icons/About-Us/Community.svg"
@@ -746,13 +746,13 @@ export default function AboutUsPage() {
               <h3 className="text-[#1A1A1A] text-3xl font-['DM_Serif_Display'] mb-4">
                 Community
               </h3>
-              <p className="text-[#4B5563] text-base leading-relaxed line-clamp-2">
+              <p className="text-[#4B5563] lg:text-left text-xl leading-relaxed font-light font-['SF_Pro_Display'] lg:line-clamp-2">
                 We foster a supportive community where designers can learn,
                 share, and grow together in their creative journey.
               </p>
             </div>
             {/* grid 4 */}
-            <div className="flex flex-col p-8 rounded-[20px] border border-white/30 bg-white/70 shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
+            <div className="flex flex-col p-8 rounded-[24px] shadow-[0_8px_32px_0_rgba(31,38,135,0.07),0_8px_32px_0_rgba(31,38,135,0.07)] backdrop-blur-[5px]">
               <div className="relative w-16 h-16 mb-6">
                 <Image
                   src="https://frontend-rho-nine-42.vercel.app/icons/About-Us/Excellence.svg"
@@ -764,7 +764,7 @@ export default function AboutUsPage() {
               <h3 className="text-[#1A1A1A] text-3xl font-['DM_Serif_Display'] mb-4">
                 Excellence
               </h3>
-              <p className="text-[#4B5563] text-base leading-relaxed line-clamp-2">
+              <p className="text-[#4B5563] lg:text-left text-xl leading-relaxed font-light font-['SF_Pro_Display'] lg:line-clamp-2">
                 We strive for excellence in every aspect of our platform, from
                 the quality of our AI to the user experience we provide.
               </p>
@@ -776,11 +776,11 @@ export default function AboutUsPage() {
       <section className="hidden md:block px-20 py-32 bg-[#FAF9F6]">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 items-center gap-16">
-            <div className="flex flex-col">
-              <h2 className="mb-8 font-['DM_Serif_Display'] text-5xl">
+            <div className="flex flex-col h-full">
+              <h2 className="mb-4 font-['DM_Serif_Display'] text-5xl">
                 Get in Touch
               </h2>
-              <p className="mb-8 text-[#4B5563] text-base">
+              <p className="mb-8 text-[#4B5563] text-lg font-['SF_Pro_Display'] h-[59.5px] leading-relaxed">
                 Have questions about PATRONIK or want to learn more about our
                 mission? We&apos;d love to hear from you.
               </p>
@@ -795,7 +795,7 @@ export default function AboutUsPage() {
                     />
                   </div>
                   <div>
-                    <p className="text-[#1A1A1A] text-base">Email</p>
+                    <p className="text-[#1A1A1A] text-base font-medium leading-none align-middle mb-[2.5px]">Email</p>
                     <p className="text-[#4B5563] text-base">
                       hello@patronik.com
                     </p>
@@ -811,7 +811,7 @@ export default function AboutUsPage() {
                     />
                   </div>
                   <div>
-                    <p className="text-[#1A1A1A] text-base">Phone</p>
+                    <p className="text-[#1A1A1A] text-base font-medium leading-none align-middle mb-[2.5px]">Phone</p>
                     <p className="text-[#4B5563] text-base">
                       +1 (555) 123-4567
                     </p>
@@ -827,7 +827,7 @@ export default function AboutUsPage() {
                     />
                   </div>
                   <div>
-                    <p className="text-[#1A1A1A] text-base">Address</p>
+                    <p className="text-[#1A1A1A] text-base font-medium leading-none align-middle mb-[2.5px]">Address</p>
                     <p className="text-[#4B5563] text-base whitespace-pre-line">
                       123 Fashion District{"\n"}New York, NY 10001
                     </p>
